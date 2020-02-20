@@ -1,13 +1,8 @@
-const path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 module.exports = {
-  mode: "none",
   entry: './frontend/index.js',
-  output: {
-    filename: 'bundle.js',
-    path: path.resolve(__dirname, "dist"),
-    publicPath: "/assets/",
-  },
   module: {
     rules: [
       {
@@ -35,4 +30,15 @@ module.exports = {
       },
     ],
   },
+  plugins: [
+    new CleanWebpackPlugin(),
+    new HtmlWebpackPlugin({
+      title: "Real-time Map of COVID-19",
+      filename: "index.html",
+      meta: {
+        description: "Real-time React map of COVID-19 in Shenzhen, Guangdong, China",
+      },
+      template: 'frontend/index.html',
+    }),
+  ],
 }
