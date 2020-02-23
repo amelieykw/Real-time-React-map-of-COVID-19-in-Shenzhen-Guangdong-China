@@ -17,15 +17,15 @@ module.exports = {
           options: {
             presets: [
               [
-                "@babel/preset-env",
+                '@babel/preset-env',
                 {
-                  "targets": {
-                    "node": "current"
-                  }
-                }
-              ]
-            ]
-          }
+                  targets: {
+                    node: 'current',
+                  },
+                },
+              ],
+            ],
+          },
         },
       },
     ],
@@ -33,12 +33,12 @@ module.exports = {
   plugins: [
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
-      title: "Real-time Map of COVID-19",
-      filename: "index.html",
+      title: 'Real-time Map of COVID-19',
+      filename: 'index.html',
       meta: {
-        description: "Real-time React map of COVID-19 in Shenzhen, Guangdong, China",
+        description: 'Real-time React map of COVID-19 in Shenzhen, Guangdong, China',
       },
       template: 'frontend/index.html',
     }),
   ],
-}
+};
