@@ -1,4 +1,6 @@
-import HelloWorldButton from './components/hello-world-button/hello-world-button';
+import React from 'react';
+import ReactDOM from 'react-dom';
+// import './index.css';
+import App from './App';
 
-const helloWorldButton = new HelloWorldButton();
-helloWorldButton.render();
+ReactDOM.render(<App />, document.getElementById('root'));
