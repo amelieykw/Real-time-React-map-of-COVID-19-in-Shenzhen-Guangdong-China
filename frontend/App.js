@@ -1,9 +1,10 @@
 import React from 'react';
+import GoogleApiWrapper from './components/googleMapsReact';
 
 function App() {
   return (
     <div>
-      <h1>Hello World</h1>
+      <GoogleApiWrapper />
     </div>
   );
 }
