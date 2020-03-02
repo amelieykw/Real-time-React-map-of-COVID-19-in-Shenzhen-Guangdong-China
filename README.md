@@ -1,5 +1,7 @@
 # Real-time React Map of residential areas found COVID-19 in Shenzhen, Guangdong
 
+study note in wiki
+
 ## 1st Feature of Project
 
 I'll use Reactjs, web socket and Google Map React to build a map of residential areas where novel coronavirus patients are found.
@@ -11,7 +13,7 @@ I'll use Reactjs, web socket and Google Map React to build a map of residential 
 
 ## use Google Map in Reactjs
 
-- [Google Map React](https://www.npmjs.com/package/google-map-react)
+- [Google Maps React](https://www.npmjs.com/package/google-maps-react)
 - [How to use the Google Maps API with React.js](https://dev.to/jessicabetts/how-to-use-google-maps-api-and-react-js-26c2)
 
 ## use Web Socket in Reactjs
@@ -20,13 +22,13 @@ I'll use Reactjs, web socket and Google Map React to build a map of residential 
 
 ### Schedule
 
-|          Done?          |   Date    |  Day  | Task                                                                                                                                                                                                      |
-| :---------------------: | :-------: | :---: | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| :ballot_box_with_check: | 2020/2/17 |  Mon  | 1. create empty project of two folders, **/frontend** and **/backend**, with **``babel``**, **``webpack``**, eslint and other necessary **configurations**.                                               |
-| :ballot_box_with_check: | 2020/2/18 |  Tue  | 2. implement **frontend map** by using **``React ``** and **``Google Map React``** (no need to add **``Markers``** on the map, since there're no backend for now and therefore no data from outside api). |
-| :ballot_box_with_check: | 2020/2/19 |  Wed  | 3. implement **backend service** for getting data from outside api                                                                                                                                        |
-| :ballot_box_with_check: | 2020/2/20 |  Thu  | 4. implement **``web socket`` communication** on both sides                                                                                                                                               |
-| :ballot_box_with_check: | 2020/2/21 |  Fri  | 5. Add **``Markers``** on the map according to ``{lat, lng}`` from data                                                                                                                                   |
+|          Done?          |     Date     |  Day  | Task                                                                                                                                                                                                      |
+| :---------------------: | :----------: | :---: | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+|   :white_check_mark:    | 2020/2/17~21 |  Mon  | 1. create empty project of two folders, **/frontend** and **/backend**, with **``babel``**, **``webpack``**, eslint and other necessary **configurations**.                                               |
+|   :white_check_mark:    | 2020/2/24~25 |  Tue  | 2. implement **frontend map** by using **``React ``** and **``Google Map React``** (no need to add **``Markers``** on the map, since there're no backend for now and therefore no data from outside api). |
+|   :white_check_mark:    |  2020/2/xx   |  Wed  | 3. implement **backend service** for getting data from outside api                                                                                                                                        |
+| :ballot_box_with_check: |  2020/2/xx   |  Thu  | 4. implement **``web socket`` communication** on both sides                                                                                                                                               |
+|   :white_check_mark:    |  2020/2/xx   |  Fri  | 5. Add **``Markers``** on the map according to ``{lat, lng}`` from data                                                                                                                                   |
 
 ---
 
