@@ -7,8 +7,12 @@
     "lint": "eslint ./",
     "lint-fix": "eslint --fix ./",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack --config webpack.config.prod.js",
-    "dev": "webpack-dev-server --config webpack.config.dev.js --hot --open"
+    "build-frontend": "webpack --config webpack.config.prod.js",
+    "dev-frontend": "webpack-dev-server --config webpack.config.dev.js --hot --open",
+    "build-backend": "babel backend/ --out-d dist/backend",
+    "dev-backend": "nodemon -r @babel/register backend/server.js",
+    "build-total": "npm run build-frontend && npm run build-backend",
+    "start": "node dist/backend/server.js"
   },
   "repository": {
     "type": "git",
@@ -22,9 +26,11 @@
   },
   "homepage": "https://github.com/amelieykw/Real-time-React-map-of-COVID-19-in-Shenzhen-Guangdong-China#readme",
   "devDependencies": {
+    "@babel/cli": "^7.8.4",
     "@babel/core": "^7.8.4",
     "@babel/preset-env": "^7.8.4",
     "@babel/preset-react": "^7.8.3",
+    "@babel/register": "^7.8.6",
     "babel-eslint": "^10.0.3",
     "babel-loader": "^8.0.6",
     "babel-plugin-emotion": "^10.0.27",
@@ -44,8 +50,11 @@
     "webpack-merge": "^4.2.2"
   },
   "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
     "google-map-react": "^1.1.6",
     "google-maps-react": "^2.0.2",
+    "node-fetch": "^2.6.0",
     "react": "^16.12.0",
     "react-dom": "^16.12.0"
   },

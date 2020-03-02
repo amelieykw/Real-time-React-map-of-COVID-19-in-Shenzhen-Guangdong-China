@@ -26,9 +26,9 @@ I'll use Reactjs, web socket and Google Map React to build a map of residential 
 | :---------------------: | :----------: | :---: | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 |   :white_check_mark:    | 2020/2/17~21 |  Mon  | 1. create empty project of two folders, **/frontend** and **/backend**, with **``babel``**, **``webpack``**, eslint and other necessary **configurations**.                                               |
 |   :white_check_mark:    | 2020/2/24~25 |  Tue  | 2. implement **frontend map** by using **``React ``** and **``Google Map React``** (no need to add **``Markers``** on the map, since there're no backend for now and therefore no data from outside api). |
-| :ballot_box_with_check: |  2020/2/xx   |  Wed  | 3. implement **backend service** for getting data from outside api                                                                                                                                        |
+|   :white_check_mark:    |  2020/2/xx   |  Wed  | 3. implement **backend service** for getting data from outside api                                                                                                                                        |
 | :ballot_box_with_check: |  2020/2/xx   |  Thu  | 4. implement **``web socket`` communication** on both sides                                                                                                                                               |
-| :ballot_box_with_check: |  2020/2/xx   |  Fri  | 5. Add **``Markers``** on the map according to ``{lat, lng}`` from data                                                                                                                                   |
+|   :white_check_mark:    |  2020/2/xx   |  Fri  | 5. Add **``Markers``** on the map according to ``{lat, lng}`` from data                                                                                                                                   |
 
 ---
 
