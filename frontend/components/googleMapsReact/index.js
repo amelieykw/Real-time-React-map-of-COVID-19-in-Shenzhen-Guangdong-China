@@ -6,6 +6,11 @@ const mapStyles = {
   height: '100%',
 };
 
+const mapStyles = {
+  width: '100%',
+  height: '100%',
+};
+
 const GoogleMap = ({ google }) => {
   const [center] = useState({ lat: 22.542883, lng: 114.062996 });
   const [zoom] = useState(14);
